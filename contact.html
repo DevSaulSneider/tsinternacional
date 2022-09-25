@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Contacto</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icono.png">
+    <script src="https://kit.fontawesome.com/d0c29b5b98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customicon.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class='preloader'>
+        <div class='loaded'>&nbsp;</div>
+    </div>
+    <header id="header" class="navbar-fixed-top">
+        <div class="container">
+            <div class="main_menu wow fadeInDown" data-wow-duration="2s">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a style="Font-family: Fredoka One; Font-size: 1.8em;font-weight: 600;" class="navbar-brand our_logo" href="#">TwoSisters</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="aboutus.html">Quienes Somos</a></li>
+                                <li><a href="https://www.twosistersinternacional.com/Noticias/Noticias.html">Noticias</a></li>
+                                <li><a href="https://twosistersmall.com/">Tienda</a></li>
+                                <li><a href="https://tscampus.com/">Campus</a></li>
+                                <li><a href="http://tscrowdfunding.com/">CrowdFunding</a></li>
+                                <li><a href="eventos.html">Eventos</a></li>
+                                <li><a href="contact.html">Contactanos</a></li>
+                                <li><a href="contact.html">Idioma</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!--Home page style-->
+
+    <!-- Google Maps Sections -->
+    <section id="google_map" class="">
+        <div class="container-fullwidth">
+            <div style="width:100%;height:600px;" class="ourmaps"></div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="message_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="message_top_text text-center">
+                        <h2>Contactanos</h2>
+                        <p class="description_p">Estamos aquí para ayudar. ¿Quieres saber más sobre nuestro proyecto? Por favor, póngase en contacto, ¡nos encantaría saber de usted!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="messsage_contant">
+                    <div class="col-md-7 col-sm-7">
+                        <div class="single_message_left">
+                            <form action="enviar.php" id="formid" method="POST"> 
+                                <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="names" name="nombre" placeholder="Ingrese su nombre" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="correo" placeholder="Correo electronico" required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="10" id="mensaje" name="mensaje" placeholder="Escribir mensaje, cuentame sobre tu proyecto" required></textarea>
+                                </div>
+                                <button type="submit" value="Enviar"  id="btnSend" class="botoncito">Enviar</button>
+                                <!--</div>-->
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5">
+                        <div class="single_message_right">
+                            <h4>Sede Central
+                            </h4>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                • Av. El Sol Oeste 189,
+                            
+                                <span>Depart. A</span>
+                                <span>Barranco, Lima, Perú</span>
+                            </p>
+
+                            <p><i class="fa fa-phone"></i>(+51) 928 968 266</p>
+                            <p><i class="fa fa-envelope"></i>Info@Twosistersinternacional.com</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div> <!-- End of messsage contant-->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Dirección:</h6>
+                    <div class="text-justify">
+                        <p class="parrafo-final"><i class="fa-solid fa-location-dot"></i> • Av. El Sol Oeste 189,
+                            Depart. A, Barranco
+                        </p>
+                        <p class="parrafo-final"><i class="fa-solid fa-phone"></i> • (+51) 928 968 266</p>
+                        <p class="parrafo-final"><i class="fa-solid fa-clock"></i> • Lun-Vie de 08:00 am. a 6:00 pm</p>
+                        <p class="parrafo-final"><i class="fa-solid fa-envelope"></i> • Info@Twosistersinternacional.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Enlaces</h6>
+                    <ul class="footer-links">
+                        <li><a href="embajadores.html">Embajadores</a></li>
+                        <li><a href="certificados.html">Certificados</a></li>
+                        <li><a href="https://twosistersmall.com/">Tienda</a></li>
+                        <li><a href="https://tscampus.com/">Campus</a></li>
+                        <li><a href="https://tscrowdfunding.com/">CrowdFunding</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>     
+                          </ul>
+                        </div>
+              
+                        <div class=" col-xs-6 col-md-3">
+                                <h6>Otros</h6>
+                                <ul class="footer-links">
+                                    <li><a href="politicas.html"">Politicas de Privacidad</a></li>
+                                    <li><a href="cookies.html">Cookies</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class=" container">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                                    <p class="copyright-text">Copyright &copy; 2022 Todos los derechos
+                                                        reservados
+                                                        <a href="#">TwoSisters</a>.
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <ul class="social-icons">
+                                                        <li><a target="_blank" class="facebook" href="https://www.facebook.com/hermanasgalacticas"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a target="_blank" class="twitter" href="https://www.instagram.com/twosisterinteernacional/"><i class="fa-brands fa-instagram"></i></a></li>
+                                                        <li><a target="_blank" class="dribbble" href="https://www.youtube.com/channel/UCX_V7MaLJmhZUn-JrJTmc5Q"><i class="fa-brands fa-youtube"></i></a></li>
+                                                        <li><a target="_blank" class="tiktok" href="https://www.tiktok.com/@twosistersinteernacional?lang=es"><i class="fa-brands fa-tiktok"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                </div>
+    </footer>
+    <a href="https://api.whatsapp.com/send?phone=51969669138&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20TwoSisters."
+      class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script>
+        var map = new GMaps({
+            el: '.ourmaps',
+            scrollwheel: true,
+            lat: -12.1397044,
+            lng: -77.0231111,
+        });
+    </script>
+</body>
+
+</html>

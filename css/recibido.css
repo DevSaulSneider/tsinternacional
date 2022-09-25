@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,900&subset=latin-ext');
+
+:root {
+  --Naranja: rgb(255, 130, 14);
+	--html: rgb(255, 130, 14);
+  --css: rgb(0, 43, 184);
+  --Js:rgb(224, 240, 0);
+  --Python:rgb(12, 117, 3);
+  --react:rgb(6, 179, 223);
+  --bootstrap:rgb(119, 0, 255);
+  --angular:rgb(204, 31, 0);
+	--Gris: rgb(51, 51, 51);
+	--Grisclaro: rgb(91, 91, 91);
+	--background-dark: #2d3548;
+	--text-light: rgba(255,255,255,0.6);
+	--text-lighter: rgba(255,255,255,0.9);
+	--spacing-s: 8px;
+	--spacing-m: 16px;
+	--spacing-l: 24px;
+	--spacing-xl: 32px;
+	--spacing-xxl: 64px;
+	--width-container: 1050px;
+	--border-radius-size: 14px;
+
+}
+
+/*ESTRUCTURA*/
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+    box-sizing: border-box;
+}
+
+/*CUERPO*/
+body {
+  font-family: 'Quicksand';
+  font-weight: 900;
+  background-image: url(imagenes/Patron.png);
+  background-attachment: initial;
+  background-size: 100vh;
+  height:83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html{
+  margin: 0;
+  height: 100%;
+}
+.wrapper {
+  margin-left: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+  }
+  
+  .screen {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 620px;
+  }
+  
+  .clouds{
+      position: relative;
+      bottom: -155px;
+      width: 300px;
+      height: 162px;
+      opacity: 0;
+      animation: clouds 1s .8s ease-in forwards;
+  }
+  
+  .plane {
+      position: relative;
+      width: 109px;
+      height: 109px;
+      opacity: 0;
+      animation: plane-start .8s .8s ease-out, plane-loop 1.6s 1.6s linear infinite;
+  
+  }
+  
+  .message {
+    margin-top: 70px;
+    font-family:'Quicksand';
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--Grisclaro);
+      letter-spacing: 1px;
+    animation: message .3s 1.6s ease-in-out backwards;
+  }
+  
+  .button{
+    margin: 120px;
+    background: linear-gradient(45deg, #0184ac, #31a6bb);
+    box-shadow: 2px 2px 10px rgba(3, 156, 194, 0.35);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    border-radius: 17px;
+    min-height: 45px;
+    color: #fff;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all .3s;
+    min-width: 160px;
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    z-index: 999;
+    animation: boton .3s 1.6s ease-in-out backwards;
+  }
+  @keyframes boton{ 
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+  .button:hover {
+    background: linear-gradient(45deg, #01779b, #2a98ac);
+    box-shadow: 0px 7px 20px rgba(2, 135, 168, 0.35);
+    transform: translateY(-5px);
+    z-index: 999;
+    }
+  
+  @keyframes plane-start{ 
+      0% { transform: translate(-80px, 130px) ; }
+      50% { opacity:1 }
+      100% { transform: translate(0px, 0); opacity:1  }
+  }
+  
+  @keyframes plane-loop {
+      0% { transform: translate(0px, 0); opacity:1  }
+      50% { transform: translate(-20px, 30px); opacity:1  }
+      100% { transform: translate(0px, 0); opacity:1  }
+  }
+  
+   @keyframes clouds{
+     from { opacity: 0 }
+     to { opacity: 1 }
+  }
+  
+  @keyframes message{ 
+      from { opacity: 0 }
+      to { opacity: 1 }
+  }
+
+  .success {
+    margin-left: 0px;
+    position: absolute;
+    animation-duration: 1.8s;
+    animation-fill-mode: both;
+    animation-name: bounceIn;
+    animation-iteration-count: infinite;
+    margin-top: 90px;
+  }
+  
+  
+  @keyframes bounceIn {
+      0%, 100%, 20%, 40%, 60%, 80% {
+          animation-timing-function: cubic-bezier(0.215, .61, .355, 1)
+      }
+      0% {
+          opacity: 0;
+          transform: scale3d(.3, .3, .3)
+      }
+      20% {
+          transform: scale3d(1.1, 1.1, 1.1)
+      }
+  
+      40% {
+          transform: scale3d(.9, .9, .9)
+      }
+      60% {
+          opacity: 1;
+          transform: scale3d(1.03, 1.03, 1.03)
+      }
+      80% {
+          transform: scale3d(.97, .97, .97)
+      }
+      100% {
+          opacity: 1;
+          transform: scale3d(1, 1, 1)
+      }
+  }
