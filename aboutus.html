@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
@@ -73,7 +79,7 @@
                                 <li><a href="https://tscampus.com/">Campus</a></li>
                                 <li><a href="http://tscrowdfunding.com/">CrowdFunding</a></li>
                                 <li><a href="eventos.html">Eventos</a></li>
-                                <li><a href="contact.html">Contactanos</a></li>
+                                <li><a href="contact.html">Cont&aacute;ctanos</a></li>
                                 <li><a href="https://twosistersinternacional.com/Idioma/index.html">Idioma</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -91,7 +97,7 @@
                 <div class="row text-center">
                     <div class="col-md-12 col-sm-12">
                         <div class="about_banner_text">
-                            <h1>La historia y fundación de TwoSisters</h1>
+                            <h1 class="wow bounce" data-wow-duration="3s">La historia y fundación de TwoSisters</h1>
                             <a href="" class="botoncito">Deslizar</a>
                         </div>
                     </div>
@@ -106,23 +112,63 @@
             <div class="about_top_text text-center">
                 <h2>¿Quienes Somos?</h2>
                 <div class="separator"></div>
-                <p>Somos dos niñas emprendedoras (Sahana e Isis), que queremos cambiar el mundo donde vivimos, para ello
-                    tuvimos la genial idea de comenzar a vender algunas de nuestras cosas y así contribuir con la venta
-                    sostenible. Como vimos que nuestra idea tuvo muy buena acogida y que no solo eso, sino que más niños
-                    se comenzaron a sumar, le llevamos nuestra idea a mi papá y a mi padrino, y así creamos "La Feria de
+                <p style="text-align: justify;text-justify: inter-word;">
+                    Somos dos niñas emprendedoras (Sahana e Isis), que queremos cambiar el mundo donde vivimos, para ello
+                    tuvimos la genial idea de comenzar a vender algunas de nuestras cosas y as&iacute; contribuir con la venta
+                    sostenible. Como vimos que nuestra idea tuvo muy buena acogida y que no solo eso, sino que m&acute;s niños
+                    se comenzaron a sumar, le llevamos nuestra idea a mi pap&aacute; y a mi padrino, y as&iacute; creamos "La Feria de
                     las Pulguitas". Ellos desde el primer momento nos apoyaron, y orientaron para que este proyecto
                     pueda realizarse de la mejor manera. Ahora mi hermana y yo deseamos que este proyecto, no solo nos
-                    beneficie a nosotras, sino también a la mayor cantidad de niños posibles. <br> Con ese propósito se
+                    beneficie a nosotras, sino tambi&eacute;n a la mayor cantidad de niños posibles. <br> Con ese prop&oacute;sito se
                     funda
                     "TWO SISTERS"; esta plataforma digital ha sido creada con el objetivo de brindar una serie de
                     facilidades para todos aquellos niños que deseen iniciarse en el mundo del emprendimiento. Mediante
-                    ELLA se les va a brindar toda la enseñanza que necesiten, para que puedan emprender con éxito y
-                    hasta puedan obtener recursos para financiar y desarrollar sus proyectos a través de nuestro
-                    "CrowdFunding". Se brindarán conferencias magistrales con empresarios de alto nivel latinoamericano,
-                    que participarán a través del enlace de eventos, comentándonos sus experiencias.
+                    ELLA se les va a brindar toda la enseñanza que necesiten, para que puedan emprender con &eacute;xito y
+                    hasta puedan obtener recursos para financiar y desarrollar sus proyectos a trav&eacute;s de nuestro
+                    "CrowdFunding". Se brindar&aacute;n conferencias magistrales con empresarios de alto nivel latinoamericano,
+                    que participar&aacute;n a trav&eacute;s del enlace de eventos, coment&aacute;ndonos sus experiencias.
                 </p>
             </div>
     </section>
+
+    <style>
+        .centrado{
+            text-align: center;
+            padding: 20px;
+        }
+        .bor{
+            border-radius:90%;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 10px 5px 10px 10px #888888;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(168,42,137,1) 54%, rgba(0,212,255,1) 100%);
+            
+        }
+        .hv:hover{
+            transform: scale(1.3);
+            z-index: 2;
+            transition-duration: 2s;
+        }
+        #our_about_area{
+            padding: 0;
+        }
+    </style>
+
+    <div class="row centrado">
+        <div class="col-sm-6 col-md-6 hv">
+            <img src="img/image01.jpg" alt="sahana" class="bor">
+            <div>
+            <h1 class="wow bounceInLeft" data-wow-duration="2s"><b>9 años</b></h1>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 hv">
+            <img src="img/image02.jpg" alt="Isis" class="bor">
+            <div>
+            <h1 class="wow bounceInRight" data-wow-duration="2s"><b>8 años</b></h1>
+            </div>
+        </div>
+    </div>
 
     <!-- Sections -->
     <section id="our_about_area">
@@ -152,7 +198,7 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="single_team_area">
                             <img src="img/f1.png" alt="" />
-                            <h5>Nelsón Barba</h5>
+                            <h5>Nels&oacute;n Barba</h5>
                             <p>Founder and Internacional Advisor</p>
                         </div>
                     </div><!-- End of col-md-4 -->
@@ -162,51 +208,31 @@
     <section id="our_tem_area">
         <div class="container">
             <div class="team_top_text text-center">
-                <h2>Nuestra inspiración</h2>
+                <h2>Nuestra inspiraci&oacute;n</h2>
                 <div class="separator"></div>
-                <p>Viene desde las acciones de nuestra abuela, que crio a más de dos mil niños entre víctimas de
+                <p style="text-align: justify;text-justify: inter-word;">
+                    Viene desde las acciones de nuestra abuela, que cri&oacute; a m&aacute;s de dos mil niños entre v&iacute;ctimas de
                     terrorismo, y niñas abusadas sexualmente por sus padres; teniendo que crear un albergue para
-                    protegerlos, educarlos y sostenerlos. Nuestra inspiración también viene de nuestros padres, que
-                    vivieron más de 5 años en comunidades nativas, indígenas, y centros poblados de extrema pobreza,
-                    cooperando con ellos en su desarrollo, mediante financiamientos propios. Isis, incluso nació en una
-                    comunidad nativa. A nuestros padres venían a visitarlos los más importantes personajes del mundo;
-                    entre científicos, economistas, ingenieros, empresarios, nanotecnólogos, especialistas en comercio
+                    protegerlos, educarlos y sostenerlos. Nuestra inspiraci&oacute;n tambi&eacute;n viene de nuestros padres, que
+                    vivieron m&aacute;s de 5 años en comunidades nativas, ind&iacute;genas, y centros poblados de extrema pobreza,
+                    cooperando con ellos en su desarrollo, mediante financiamientos propios. Isis, incluso naci&oacute; en una
+                    comunidad nativa. A nuestros padres ven&iacute;an a visitarlos los m&aacute;s importantes personajes del mundo;
+                    entre cient&iacute;ficos, economistas, ingenieros, empresarios, nanotecn&oacute;logos, especialistas en comercio
                     justo (Trade Fair); el creador del Euro, un asesor de 24 jefes de estado europeos, ecologistas,
-                    medioambientalistas y muchos otros personajes que lo que procuran es un bien común, lograr un cambio
-                    en esta sociedad, para que sea más equitativa y todos podamos tener las mismas oportunidades. Un
-                    cambio en el planeta que beneficie a la humanidad de forma justa y la protección de la misma. Es
-                    importante que todos contribuyamos a hacer de este planeta un lugar más justo, un lugar donde todos
+                    medioambientalistas y muchos otros personajes que lo que procuran es un bien com&uacute;n, lograr un cambio
+                    en esta sociedad, para que sea m&aacute;s equitativa y todos podamos tener las mismas oportunidades. Un
+                    cambio en el planeta que beneficie a la humanidad de forma justa y la protecci&oacute;n de la misma. Es
+                    importante que todos contribuyamos a hacer de este planeta un lugar m&aacute;s justo, un lugar donde todos
                     nos miremos como lo que realmente somos; HERMANOS. </p>
             </div>
         </div>
     </section><!-- End of Team Section -->
 
-    <section id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="single_testimonial">
-                        <p>“La idea es que desde pequeños forjemos nuestro futuro como emprendedores, pudiendo darnos la
-                            oportunidad de salir adelante y así motivar con el ejemplo, para que otros niños también lo
-                            hagan.”</p>
-                        <span class="test_author">Sahana e Isis</span>
-
-                        <span class="test_author2">Fundadoras de TwoSisters</span>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="single_testimonial_img">
-                        <img src="img/test.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Testmonial Section -->
     <!-- Sections -->
     <section id="our_about_area">
         <div class="container">
             <div class="about_top_text text-center">
-                <h2>Nuestra Misión</h2>
+                <h2>Nuestra Misi&oacute;n</h2>
                 <br><br>
                 <div class="separator"></div>
                 <div class="row">
@@ -214,11 +240,13 @@
                         <div class="single_team_area">
                             <img src="img/qs1.jpg" alt="" />
                             <h5>Promover y Defender el Emprendimiento</h5>
-                            <p>Creemos con convicción que el emprendimiento es el motor de la economía, fuente de
+                            <p style="text-align: justify;text-justify: inter-word;">
+                                Creemos con convicci&oacute;n que el emprendimiento es el motor de la econom&iacute;a, fuente de
                                 movilidad social, de desarrollo personal y colectivo. Deseamos un Estado que reconozca
-                                ese derecho, haciéndose responsable de formar líderes emprendedores brindándoles las
+                                ese derecho, haci&eacute;ndose responsable de formar l&iacute;deres emprendedores brind&aacute;ndoles las
                                 facilidades y facilitándoles lo necesario para que las nuevas generaciones sean
-                                productivas en beneficios de sus familias y sus ciudades.</p>
+                                productivas en beneficios de sus familias y sus ciudades.
+                            </p>
                         </div>
                     </div>
 
@@ -226,11 +254,12 @@
                         <div class="single_team_area">
                             <img src="img/qs2.jpg" alt="" />
                             <h5>Queremos que las grandes empresas</h5>
-                            <p>Apoyen de forma efectiva lo que es la responsabilidad social y nos ayuden a formarnos
-                                como niños emprendedores, para que nuestra ciudadanía coopere de igual forma y aprecie
+                            <p style="text-align: justify;text-justify: inter-word;">
+                                Apoyen de forma efectiva lo que es la responsabilidad social y nos ayuden a formarnos
+                                como niños emprendedores, para que nuestra ciudadan&iacute;a coopere de igual forma y aprecie
                                 sus resultados, en la medida que haya sido consecuencia del riesgo, audacia,
                                 creatividad, esfuerzo y principios de responsabilidad que nosotros como niños estamos
-                                cumpliendo; dándoles el ejemplo que ellos como adultos deberían de darnos a nosotros.
+                                cumpliendo; d&aacute;ndoles el ejemplo que ellos como adultos deber&iacute;an de darnos a nosotros.
                             </p>
                         </div>
                     </div>
@@ -239,41 +268,39 @@
                         <div class="single_team_area">
                             <img src="img/qs3.jpg" alt="" />
                             <h5>Es importante la libertad</h5>
-                            <p>La discriminación por origen de raza, clase, religión u cualquier otra, es condenable.
-                                Estamos viendo la consecuencia de ello en todas las esferas; desde la política con el
-                                abuso de autoridad y la no defensa de nuestros derechos como infantes, a través de una
-                                posición dominante y abusiva, por los privilegios que se han auto otorgado.</p>
+                            <p style="text-align: justify;text-justify: inter-word;">
+                                La discriminaci&oacute;n por origen de raza, clase, religi&oacute;n u cualquier otra, es condenable.
+                                Estamos viendo la consecuencia de ello en todas las esferas; desde la pol&iacute;tica con el
+                                abuso de autoridad y la no defensa de nuestros derechos como infantes, a trav&eacute;s de una
+                                posici&oacute;n dominante y abusiva, por los privilegios que se han auto otorgado.
+                            </p>
                         </div>
                     </div><!-- End of col-md-4 -->
                 </div><!-- End of row -->
                 <div class="separator"></div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-12 col-sm-12">
                         <div class="single_team_area">
                             <img src="img/qs4.jpg" alt="" />
-                            <h5>Nuestra Misión es</h5>
-                            <p>Contribuir, inspirar y motivar con nuestras acciones a todos los actores de la economía,
-                                a que se unan y tengamos todos una misma visión: Hacer de este planeta uno justo y
+                            <h5>Nuestra Misi&oacute;n es</h5>
+                            <p>Contribuir, inspirar y motivar con nuestras acciones a todos los actores de la econom&iacute;a,
+                                a que se unan y tengamos todos una misma visi&oacute;n: Hacer de este planeta uno justo y
                                 equitativo. Esto sólo se puede lograr mediante la educación de las nuevas generaciones,
                                 que la conformamos todos los infantes, los que seremos el futuro de una “nueva
                                 sociedad”, una que traiga beneficio y progreso a todo ser humano. Es importante que
                                 ahora tomemos conciencia si queremos proteger la naturaleza y el medio ambiente.</p>
                         </div>
-
                     </div>
-
                 </div><!-- End of row -->
-
-
             </div>
     </section>
     <section id="our_tem_area">
         <div class="container">
             <div class="team_top_text text-center">
-                <h2>Nuestra visión</h2>
+                <h2>Nuestra visi&oacute;n</h2>
                 <div class="separator"></div>
-                <p>Nuestro deseo es ver en el tiempo, los buenos resultados de la formación A1 que nuestros niños
-                    reciben en TWO SISTERS. Asimismo, deseamos de todo corazón, que esta calidad de educación que
+                <p>Nuestro deseo es ver en el tiempo, los buenos resultados de la formaci&oacute;n A1 que nuestros niños
+                    reciben en TWO SISTERS. Asimismo, deseamos de todo coraz&oacute;n, que esta calidad de educaci&oacute;n que
                     nosotros brindamos, alcance a la mayor cantidad de niños posible alrededor del mundo. Queremos niños
                     felices y realizados, porque sabemos que serán los adultos exitosos del futuro. </p>
             </div>
@@ -308,7 +335,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <h6>Dirección:</h6>
+                    <h6>Direcci&acute;n:</h6>
                     <div class="text-justify">
                         <p class="parrafo-final"><i class="fa-solid fa-location-dot"></i> • Av. El Sol Oeste 189,
                             Depart. A, Barranco
@@ -335,8 +362,8 @@
                 <div class=" col-xs-6 col-md-3">
                     <h6>Otros</h6>
                     <ul class="footer-links">
-                        <li><a href="politicas.html"">Politicas de Privacidad</a></li>
-                                    <li><a href=" cookies.html">Cookies</a></li>
+                        <li><a href="politicas.html">Pol&iacute;ticas de Privacidad</a></li>
+                        <li><a href=" cookies.html">Cookies</a></li>
                     </ul>
                 </div>
             </div>
