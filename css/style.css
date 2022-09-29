@@ -96,6 +96,9 @@ p {
 .clear {
     clear: both;
 }
+.jsf{
+    text-align: justify;
+}
 ol,
 ul {
     list-style: none;
@@ -103,6 +106,10 @@ ul {
 }
 img {
     max-width: 100%;
+}
+.img-center{
+    display: block;
+    margin: 0px auto;
 }
 textarea,
 input[type="text"],
@@ -193,6 +200,9 @@ p:last-child {
 }
 .text {
     color: #333333;
+}
+.text-center{
+    text-align: center;
 }
 .colorstext {
     color: #f56363;
