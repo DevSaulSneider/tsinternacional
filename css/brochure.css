@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Shrikhand&display=swap');
+
+.ts{
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+}
+/* card */
+.card-img-filter{
+    filter: brightness(0.5);
+    /* max-height: 1002px */
+}
+.card{
+    transition-duration: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+.card-efect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+}
+.card-img-overlay{
+    transition-duration: 0.6s;
+}
+.card-efect:hover .card-img-overlay{
+    transform: scale(0.8);
+}
+
+.rs{
+    color: #ffff;
+}
+/* logo */
+.img-logo{
+    width: 100%;
+}
+/* Slider */
+.carousel-inner{
+    max-height: 39rem;
+    width: 100%;
+}
+.intro{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+}
+.st-title{
+    font-family: 'Shrikhand';
+    color: #0f5f5c;
+}
+@media (max-width:768px){
+    #bitcoin{
+        width: 90% !important;
+    }
+    .bitcoin-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 719px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
